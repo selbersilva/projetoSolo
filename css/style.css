@@ -1,0 +1,35 @@
+.titulo-vitrine {
+    color: darkturquoise;
+    font-family: pacifico, curcive;
+}
+
+.cor-especial {
+    color: darkturquoise;
+}
+
+.img-vitrine {
+    height: 400px;
+    object-fit: cover;
+}
+
+.borda-card {
+    border-color: darkturquoise;
+    max-width: 18rem;
+}
+
+.posicao-card {
+    height: 220px;
+    object-fit: cover;
+}
+
+.botao-confira, .botao-comprar, .botao-enviar{
+    background-color: darkturquoise;
+    color: floralwhite;
+}
+
+.titulo-cadastro {
+    color: darkturquoise;
+    font-family: pacifico, curcive;
+    padding: 40px 40px;
+    text-align: center;
+}

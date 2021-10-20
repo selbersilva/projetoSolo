@@ -1,0 +1,130 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>  
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class= "titulo-vitrine cor-especial" href="#">Marca Feminina</a>
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    </header>
+
+    <h1 class="titulo-cadastro">Cadastro do Cliente</h1>
+    <form>  
+        <section class="form-row">
+             <div class="form-group col-md-6">
+                    <label for="email" >Email</label>
+                    <input type="email" class="
+                    form-control" placeholder="exemplo@nome.com" required id="email">
+            </div>
+            <div class="form-group col-md-6">  
+                    <label for="password">Senha</label>
+                    <input type="text" class="form-control" id="password" placeholder="De 8-10 caracteres">
+            </div>
+        </section>
+        
+        <section class="form-row">
+            <div class="form-group col-md-6">
+                <label for="nome">Nome completo</label>
+                <input type="text" class="form-control" placeholder="Nome/Sobremone"id="nome">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="xxx.xxx.xxx-xx">
+            </div>
+        </section>
+
+        <section class="form-row">
+            <div class="form-group col-md-6">
+                <label for="address">Endereço</label>
+                <input type="text" class="form-control" id="address" placeholder="Rua/Avenida/Número">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="address2">Complemento</label>
+                <input type="text" class="form-control" id="address2" placeholder="Quadra/Lote/Apartamento/Bairro">
+            </div>
+        </section>
+
+        <section class="form-row">
+            <div class="form-group col-md-6">
+                <label for="city">Cidade
+                </label>
+                <input type="text" class="form-control" id="city">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="state">Estado</label>
+                <select id="state" class="form-control">
+                    <option selected>Selecione</option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SE</option>
+                    <option>SP</option>
+                    <option>TO</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control" placeholder="(xx) xxxxx-xxxx"id="telefone">
+            </div>
+        </section>
+
+        <section class="form-group">
+            <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                    Receber novidades.
+                    </label>
+            </div>
+        </section>
+        
+        <section class="button d-flex justify-content-around" >
+            <button type="botaoEnviar" class="btn botao-enviar">Enviar</button>
+            <a href="comprar" class="btn botao-comprar">Compar</a>
+        </section>
+    </form>
+
+    <nav aria-label="Page navigation example ">
+        <ul class="pagination d-flex justify-content-center">
+                <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="botas.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="mules.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="sandalias.html">4</a></li>
+                <li class="page-item"><a class="page-link" href="scarpam.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="tenis.html">6</a></li>
+        </ul>
+     </nav>
+     <script type="text/javascript" src="js/script.js"></script>>
+      
+</body>
+</html>
