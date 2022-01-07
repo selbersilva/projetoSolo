@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,11 @@
     <title>Cadastro</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/botoes.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/cards.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/inputs.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/formularios.css">
 </head>  
 
 <body>
@@ -17,102 +22,72 @@
               <span class="navbar-toggler-icon"></span>
             </button>
     </header>
-
-    <h1 class="titulo-cadastro">Cadastro do Cliente</h1>
-    <form>  
-        <section class="form-row">
-             <div class="form-group col-md-6">
-                    <label for="email" >Email</label>
-                    <input type="email" class="
-                    form-control" placeholder="exemplo@nome.com" required id="email">
-            </div>
-            <div class="form-group col-md-6">  
-                    <label for="password">Senha</label>
-                    <input type="text" class="form-control" id="password" placeholder="De 8-10 caracteres">
-            </div>
-        </section>
         
-        <section class="form-row">
-            <div class="form-group col-md-6">
-                <label for="nome">Nome completo</label>
-                <input type="text" class="form-control" placeholder="Nome/Sobremone"id="nome">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="cpf">CPF</label>
-                <input type="text" class="form-control" id="cpf" placeholder="xxx.xxx.xxx-xx">
-            </div>
-        </section>
+    <main class="container flex flex--coluna flex--centro">
 
-        <section class="form-row">
-            <div class="form-group col-md-6">
-                <label for="address">Endereço</label>
-                <input type="text" class="form-control" id="address" placeholder="Rua/Avenida/Número">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="address2">Complemento</label>
-                <input type="text" class="form-control" id="address2" placeholder="Quadra/Lote/Apartamento/Bairro">
-            </div>
-        </section>
+        <h1 class="titulo-cadastro">Cadastro do Cliente</h1>
 
-        <section class="form-row">
-            <div class="form-group col-md-6">
-                <label for="city">Cidade
-                </label>
-                <input type="text" class="form-control" id="city">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="state">Estado</label>
-                <select id="state" class="form-control">
-                    <option selected>Selecione</option>
-                    <option>AC</option>
-                    <option>AL</option>
-                    <option>AP</option>
-                    <option>AM</option>
-                    <option>BA</option>
-                    <option>CE</option>
-                    <option>DF</option>
-                    <option>ES</option>
-                    <option>GO</option>
-                    <option>MA</option>
-                    <option>MT</option>
-                    <option>MS</option>
-                    <option>MG</option>
-                    <option>PA</option>
-                    <option>PB</option>
-                    <option>PR</option>
-                    <option>PE</option>
-                    <option>PI</option>
-                    <option>RJ</option>
-                    <option>RN</option>
-                    <option>RS</option>
-                    <option>RO</option>
-                    <option>RR</option>
-                    <option>SC</option>
-                    <option>SE</option>
-                    <option>SP</option>
-                    <option>TO</option>
-                </select>
-            </div>
-            <div class="form-group col-md-2">
-                <label for="telefone">Telefone</label>
-                <input type="text" class="form-control" placeholder="(xx) xxxxx-xxxx"id="telefone">
-            </div>
+         <section class="cartao">
+            <h2 class="cartao__titulo">Complete seu cadastro</h2>
+            <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+                <fieldset>
+                    <legend class="formulario__legenda">Informações básicas</legend>
+                    <div class="input-container">
+                        <input name="nome" id="nome" class="input" type="text" placeholder="Nome" data-tipo="nome" required>
+                        <label class="input-label" for="nome">Nome</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email"required>
+                        <label class="input-label" for="email">Email</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="senha" id="senha" class="input" type="password" placeholder="Senha" data-tipo="senha"pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%¨^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+                        <label class="input-label" for="senha">Senha</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="formulario__legenda">Informações pessoais</legend>
+                    <div class="input-container">
+                        <input name="dataNascimento" id="dataNascimento" class="input" type="date" placeholder="Data de nascimento" data-tipo="dataNascimento" required>
+                        <label class="input-label" for="nascimento">Data de nascimento</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="cpf" id="cpf" class="input" type="text" placeholder="CPF" data-tipo="cpf" required>
+                        <label class="input-label" for="cpf">CPF</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="formulario__legenda">Endereço</legend>
+                    <div class="input-container">
+                        <input name="cep" id="cep" class="input" type="text" placeholder="CEP" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
+                        <label class="input-label" for="cep">CEP</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="logradouro" id="logradouro" class="input" type="text" placeholder="Logradouro"  data-tipo="logradouro" required>
+                        <label class="input-label" for="logradouro">Logradouro</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade"  data-tipo="cidade" required>
+                        <label class="input-label" for="cidade">Cidade</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="estado" id="estado" class="input" type="text" placeholder="Estado"  data-tipo="estado" required>
+                        <label class="input-label" for="estado">Estado</label>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+                <button class="btn btn-outline-info botao">Cadastrar</a>
+            </form>
         </section>
-
-        <section class="form-group">
-            <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                    Receber novidades.
-                    </label>
-            </div>
-        </section>
-        
-        <section class="button d-flex justify-content-around" >
-            <button type="botaoEnviar" class="btn botao-enviar">Enviar</button>
-            <a href="comprar" class="btn botao-comprar">Compar</a>
-        </section>
-    </form>
+    </main>
 
     <nav aria-label="Page navigation example ">
         <ul class="pagination d-flex justify-content-center">
@@ -124,7 +99,9 @@
                 <li class="page-item"><a class="page-link" href="tenis.html">6</a></li>
         </ul>
      </nav>
-     <script type="text/javascript" src="js/script.js"></script>>
-      
+
+     <script src="./js/app.js" type="module"></script>
+    
+    
 </body>
 </html>
