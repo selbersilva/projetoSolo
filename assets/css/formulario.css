@@ -1,0 +1,43 @@
+.titulo-complete {
+   color:  #353535;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--centro {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--coluna {
+  flex-direction: column;
+}
+
+
+.cadastro {
+   display: flex;
+   flex-direction: column;
+}
+
+
+.cadastro-cartao {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.cadastro-cartao__icone-concluido {
+   display: block;
+   width: 3.5rem;
+   height: 3.5rem;
+   margin-bottom: 1rem;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.nav-rodape {
+   padding: 50px;
+}

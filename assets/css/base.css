@@ -1,0 +1,20 @@
+.titulo-vitrine {
+   color: darkturquoise;
+   font-family: pacifico, curcive;
+}
+
+.cor-especial {
+   color: darkturquoise;
+}
+
+.img-vitrine {
+   height: 400px;
+   object-fit: cover;
+}
+
+.titulo-cadastro {
+   color: darkturquoise;
+   font-family: pacifico, curcive;
+   padding: 60px 40px;
+   text-align: center;
+}

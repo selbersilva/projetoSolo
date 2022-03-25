@@ -1,0 +1,9 @@
+.borda-card {
+   border-color: darkturquoise;
+   max-width: 18rem;
+}
+
+.posicao-card {
+   height: 220px;
+   object-fit: cover;
+}
