@@ -1,0 +1,29 @@
+{
+  "name": "projeto-solo",
+  "version": "1.0.0",
+  "description": "Repositório de projeto solo marca feminina",
+  "main": "./formulario.html",
+  "scripts": {
+    "cy:open": "cypress:open",
+    "cy:open:mobile": "--config viewportWidth=410  viewportHeight=860",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selbersilva/projetoSolo.git"
+  },
+  "keywords": [
+    "Testing",
+    "Cypress.io"
+  ],
+  "author": "Selber Silva <sel.ber972@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/selbersilva/projetoSolo#readme",
+  "dependencies": {
+    "cypress": "^9.6.1" 
+  },
+
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
+  }
+}
